@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icons8-Ios7-Cinema-Documentary.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -53,8 +56,20 @@
     </Compile>
     <Compile Include="Info.cs" />
     <Compile Include="Movies.cs" />
+    <Compile Include="Order Was Given.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order Was Given.Designer.cs">
+      <DependentUpon>Order Was Given.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReserveSeats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReserveSeats.Designer.cs">
+      <DependentUpon>ReserveSeats.cs</DependentUpon>
+    </Compile>
     <Compile Include="Salon Four.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +99,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Order Was Given.resx">
+      <DependentUpon>Order Was Given.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -93,6 +111,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ReserveSeats.resx">
+      <DependentUpon>ReserveSeats.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Salon Four.resx">
       <DependentUpon>Salon Four.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,6 +138,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons8-Ios7-Cinema-Documentary.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

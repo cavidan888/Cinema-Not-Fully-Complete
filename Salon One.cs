@@ -12,20 +12,29 @@ namespace letsCinema
 {
     public partial class Salon_One : Form
     {
-        public int LeftPos;
-        public int b = 20;
-        public new int Top = 50;
-        public new int Left = 40;
+        public static List<Button> seatList = new List<Button>();
+
+        public Button btn;
+        public int top = 0;
+        public int left = 0;
+        public int count = 10;
+        public int seatNumber = 1;
+        public static double Qiymet;
+
 
         public Salon_One()
         {
             InitializeComponent();
         }
 
+
+
+
         private void Salon_One_Load(object sender, EventArgs e)
         {
 
             CreateOnix();
+
 
 
 
@@ -36,39 +45,69 @@ namespace letsCinema
             //    buttons.Add(newButton);
             //    this.Controls.Add(newButton);
             //}
+            Welcome wlc = new Welcome();
+            
 
         }
 
         public void CreateOnix()
         {
-             //int onixCount = 25;
 
-            //for (int i = 0; i < onixCount; i++)
-            //{
-            //    for (int j = 0; j < onixCount; j++)
-            //    {
-            //        Button onix = new Button();
-            //        onix.Width = 60;
-            //        onix.Height = 30;
-            //        onix.Left = LeftPos;
-            //        onix.Text = "click me";
-            //        onix.FlatStyle = FlatStyle.Flat;
-            //        onix.BackColor = Color.Silver;
-            //        onix.ForeColor = Color.White;
-                    //onix.Left = (this.ClientSize.Width - onix.Width) / 2;
-                    //onix.Top = (this.ClientSize.Height - onix.Height) / 4;
-                    //Controls.Add(onix);
-                    //LeftPos += 60;
+            for (int i = 0; i < count * 2; i++)
+            {
+                count -= 2;
+                left = (50 * i);
+                for (int j = 0; j < count; j++)
+                {
+                    btn = new Button();
+                    btn.Height = 50;
+                    btn.Width = 50;
+                    btn.Left = left;
+                    btn.Top = top;
 
-                    //if (Left - 40 == btn.Width * 20)
-                    //{
-                    //    Top += btn.Height;
-                    //    Left = 40;
-                    //}
+                    btn.Text = seatNumber.ToString();
+                    btn.ForeColor = Color.FromArgb(235, 244, 66);
+                    btn.BackColor = Color.Black;
+                    btn.FlatAppearance.BorderSize = 5;
+                    btn.FlatAppearance.BorderColor = Color.White;
+                    btn.Click  +=  new EventHandler(clicked);
+                    btn.FlatStyle = FlatStyle.Flat;
+                    Controls.Add(btn);
+                    left += 50;
+                    
+                    seatNumber++;
 
                 }
-                
+                left = 0;
+                top += 50;
+
             }
+
+          
         }
-//    }
-//}
+
+        public void clicked(object sender, EventArgs e)
+        {
+            var btn = sender as Button; // click olunan obj obyektine button imis kimi davran
+
+            btn.BackColor = Color.Red;
+            btn.Enabled = false;
+            seatList.Add(btn);
+            textBox1.Text = "";
+            foreach (Button item in seatList)
+            {
+                textBox1.Text += item.Text + ",";
+            }
+           Qiymet += 8.50;
+            
+
+        }
+
+        private void reserveButton_Click(object sender, EventArgs e)
+        {
+            ReserveSeats rs = new ReserveSeats();
+            rs.Show();
+        }
+    }
+
+}

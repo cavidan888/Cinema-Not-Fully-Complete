@@ -60,8 +60,6 @@
             this.ChooseSeansToMovieTwo = new System.Windows.Forms.ComboBox();
             this.ChooseSeansToMovieThree = new System.Windows.Forms.ComboBox();
             this.ChooseSeansToMovieFour = new System.Windows.Forms.ComboBox();
-            this.MoviesList = new System.Windows.Forms.ComboBox();
-            this.MovieSelecter = new System.Windows.Forms.Button();
             this.ChooseSalonToMovieOne = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.Movie1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Movie3)).BeginInit();
@@ -116,7 +114,7 @@
             // MovieOneInfo
             // 
             this.MovieOneInfo.FormattingEnabled = true;
-            this.MovieOneInfo.Location = new System.Drawing.Point(91, 277);
+            this.MovieOneInfo.Location = new System.Drawing.Point(87, 288);
             this.MovieOneInfo.Name = "MovieOneInfo";
             this.MovieOneInfo.Size = new System.Drawing.Size(131, 21);
             this.MovieOneInfo.TabIndex = 4;
@@ -124,7 +122,7 @@
             // MovieTwoInfo
             // 
             this.MovieTwoInfo.FormattingEnabled = true;
-            this.MovieTwoInfo.Location = new System.Drawing.Point(440, 277);
+            this.MovieTwoInfo.Location = new System.Drawing.Point(440, 288);
             this.MovieTwoInfo.Name = "MovieTwoInfo";
             this.MovieTwoInfo.Size = new System.Drawing.Size(121, 21);
             this.MovieTwoInfo.TabIndex = 5;
@@ -188,9 +186,9 @@
             // ChooseSalonToMovieTwo
             // 
             this.ChooseSalonToMovieTwo.FormattingEnabled = true;
-            this.ChooseSalonToMovieTwo.Location = new System.Drawing.Point(450, 320);
+            this.ChooseSalonToMovieTwo.Location = new System.Drawing.Point(426, 337);
             this.ChooseSalonToMovieTwo.Name = "ChooseSalonToMovieTwo";
-            this.ChooseSalonToMovieTwo.Size = new System.Drawing.Size(103, 21);
+            this.ChooseSalonToMovieTwo.Size = new System.Drawing.Size(155, 21);
             this.ChooseSalonToMovieTwo.TabIndex = 13;
             // 
             // ChooseSalonToMovieThree
@@ -213,7 +211,7 @@
             // 
             this.SalonChooserInfo.AutoSize = true;
             this.SalonChooserInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SalonChooserInfo.Location = new System.Drawing.Point(8, 320);
+            this.SalonChooserInfo.Location = new System.Drawing.Point(104, 316);
             this.SalonChooserInfo.Name = "SalonChooserInfo";
             this.SalonChooserInfo.Size = new System.Drawing.Size(96, 15);
             this.SalonChooserInfo.TabIndex = 16;
@@ -223,7 +221,7 @@
             // 
             this.InfoMovie.AutoSize = true;
             this.InfoMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InfoMovie.Location = new System.Drawing.Point(54, 279);
+            this.InfoMovie.Location = new System.Drawing.Point(135, 270);
             this.InfoMovie.Name = "InfoMovie";
             this.InfoMovie.Size = new System.Drawing.Size(31, 15);
             this.InfoMovie.TabIndex = 20;
@@ -233,7 +231,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(343, 324);
+            this.label1.Location = new System.Drawing.Point(455, 316);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 15);
             this.label1.TabIndex = 21;
@@ -263,7 +261,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(388, 279);
+            this.label4.Location = new System.Drawing.Point(486, 270);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 15);
             this.label4.TabIndex = 24;
@@ -293,7 +291,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(9, 357);
+            this.label7.Location = new System.Drawing.Point(101, 366);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(99, 15);
             this.label7.TabIndex = 27;
@@ -303,7 +301,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(343, 357);
+            this.label8.Location = new System.Drawing.Point(454, 366);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(99, 15);
             this.label8.TabIndex = 28;
@@ -332,7 +330,7 @@
             // ChooseSeansToMovieOne
             // 
             this.ChooseSeansToMovieOne.FormattingEnabled = true;
-            this.ChooseSeansToMovieOne.Location = new System.Drawing.Point(119, 357);
+            this.ChooseSeansToMovieOne.Location = new System.Drawing.Point(114, 393);
             this.ChooseSeansToMovieOne.Name = "ChooseSeansToMovieOne";
             this.ChooseSeansToMovieOne.Size = new System.Drawing.Size(75, 21);
             this.ChooseSeansToMovieOne.TabIndex = 31;
@@ -340,7 +338,7 @@
             // ChooseSeansToMovieTwo
             // 
             this.ChooseSeansToMovieTwo.FormattingEnabled = true;
-            this.ChooseSeansToMovieTwo.Location = new System.Drawing.Point(463, 357);
+            this.ChooseSeansToMovieTwo.Location = new System.Drawing.Point(468, 393);
             this.ChooseSeansToMovieTwo.Name = "ChooseSeansToMovieTwo";
             this.ChooseSeansToMovieTwo.Size = new System.Drawing.Size(75, 21);
             this.ChooseSeansToMovieTwo.TabIndex = 32;
@@ -361,45 +359,21 @@
             this.ChooseSeansToMovieFour.Size = new System.Drawing.Size(75, 21);
             this.ChooseSeansToMovieFour.TabIndex = 34;
             // 
-            // MoviesList
-            // 
-            this.MoviesList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MoviesList.FormattingEnabled = true;
-            this.MoviesList.Location = new System.Drawing.Point(678, 455);
-            this.MoviesList.Name = "MoviesList";
-            this.MoviesList.Size = new System.Drawing.Size(169, 23);
-            this.MoviesList.TabIndex = 35;
-            // 
-            // MovieSelecter
-            // 
-            this.MovieSelecter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.MovieSelecter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MovieSelecter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MovieSelecter.ForeColor = System.Drawing.Color.Black;
-            this.MovieSelecter.Location = new System.Drawing.Point(346, 447);
-            this.MovieSelecter.Name = "MovieSelecter";
-            this.MovieSelecter.Size = new System.Drawing.Size(270, 33);
-            this.MovieSelecter.TabIndex = 36;
-            this.MovieSelecter.Text = "Select Movie";
-            this.MovieSelecter.UseVisualStyleBackColor = false;
-            this.MovieSelecter.Click += new System.EventHandler(this.MovieSelecter_Click);
-            // 
             // ChooseSalonToMovieOne
             // 
             this.ChooseSalonToMovieOne.FormattingEnabled = true;
-            this.ChooseSalonToMovieOne.Location = new System.Drawing.Point(101, 317);
+            this.ChooseSalonToMovieOne.Location = new System.Drawing.Point(73, 337);
             this.ChooseSalonToMovieOne.Name = "ChooseSalonToMovieOne";
-            this.ChooseSalonToMovieOne.Size = new System.Drawing.Size(121, 21);
+            this.ChooseSalonToMovieOne.Size = new System.Drawing.Size(160, 21);
             this.ChooseSalonToMovieOne.TabIndex = 37;
             // 
             // Welcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1292, 523);
             this.Controls.Add(this.ChooseSalonToMovieOne);
-            this.Controls.Add(this.MovieSelecter);
-            this.Controls.Add(this.MoviesList);
             this.Controls.Add(this.ChooseSeansToMovieFour);
             this.Controls.Add(this.ChooseSeansToMovieThree);
             this.Controls.Add(this.ChooseSeansToMovieTwo);
@@ -431,8 +405,9 @@
             this.Controls.Add(this.Movie3);
             this.Controls.Add(this.Movie4);
             this.Controls.Add(this.Movie1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Welcome";
-            this.Text = "Form1";
+            this.Text = "Welcome Sinema";
             this.Load += new System.EventHandler(this.Welcome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Movie1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Movie3)).EndInit();
@@ -477,9 +452,7 @@
         private System.Windows.Forms.ComboBox ChooseSeansToMovieTwo;
         private System.Windows.Forms.ComboBox ChooseSeansToMovieThree;
         private System.Windows.Forms.ComboBox ChooseSeansToMovieFour;
-        private System.Windows.Forms.ComboBox MoviesList;
-        private System.Windows.Forms.Button MovieSelecter;
-        private System.Windows.Forms.ComboBox ChooseSalonToMovieOne;
+        public System.Windows.Forms.ComboBox ChooseSalonToMovieOne;
     }
 }
 

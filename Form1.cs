@@ -16,34 +16,28 @@ namespace letsCinema
         public int movieCount = 1;
         public int salonID = 1;
         public int seansID = 1;
+
+        public static string secilmisler;
+        
         public Welcome()
         {
             InitializeComponent();
             this.Width = 1301;
             this.Height = 697;
+            this.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
         private void Welcome_Load(object sender, EventArgs e)
         {
             convertToDropDownList();
-            addMoviesToMovieChooser();
             addInfoToInfoBox();
             AddSalonToSeansBoxs();
             addSeansToSeansBoxs();
 
-
+            secilmisler = "Bang Bang";
         }
 
-        public void addMoviesToMovieChooser()
-        {
-            foreach (string movies in Movies.moviesName)
-            {
-                MoviesList.DropDownStyle = ComboBoxStyle.DropDownList;
-                Movies.ID = Count;
-                Count++;
-                MoviesList.Items.Add(Movies.ID + ":" + movies);
-            }
-        }
+       
 
 
 
@@ -130,22 +124,9 @@ namespace letsCinema
             }
         }
 
-        public void movieListToEmpty()//user must doing choose
-        {
-            if (MoviesList.SelectedItem == null)
-            {
-                MessageBox.Show("Please Choose Movie Name Before Booking Seat");
-            }
-            else
-            {
-                //Do Something;
-            }
-        }
+       
 
-        private void MovieSelecter_Click(object sender, EventArgs e)
-        {
-            movieListToEmpty();
-        }
+        
 
 
         public void checkSeansOrSalonEmptyToMovieOne()
@@ -168,9 +149,12 @@ namespace letsCinema
                 {
 
                     case "1:Salon Nar Mobile":
+                        
                         Salon_One so = new Salon_One();
                         so.Show();
                         so.SalonName.Text = ChooseSalonToMovieOne.SelectedItem.ToString();
+                       
+                        
                         break;
 
                     case "2:Salon VIP":
@@ -367,10 +351,9 @@ namespace letsCinema
             //This Code will Executed When You Click To Picture Box one
             private void Movie1_Click(object sender, EventArgs e)
             {
-            checkSeansOrSalonEmptyToMovieOne();
+              checkSeansOrSalonEmptyToMovieOne();
            
-            
-        }
+            }
 
             //This Code will Executed When You Click To Picture Box Two
             private void Movie2_Click(object sender, EventArgs e)
